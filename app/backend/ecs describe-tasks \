@@ -1,0 +1,99 @@
+{
+    "tasks": [
+        {
+            "attachments": [
+                {
+                    "id": "58b6f5e4-67d1-47fd-bda3-71d52e35d0f2",
+                    "type": "ElasticNetworkInterface",
+                    "status": "ATTACHED",
+                    "details": [
+                        {
+                            "name": "subnetId",
+                            "value": "subnet-097cab39238f3085b"
+                        },
+                        {
+                            "name": "networkInterfaceId",
+                            "value": "eni-0a01773417d577838"
+                        },
+                        {
+                            "name": "macAddress",
+                            "value": "02:46:c8:15:0d:43"
+                        },
+                        {
+                            "name": "privateDnsName",
+                            "value": "ip-10-0-2-244.ap-southeast-1.compute.internal"
+                        },
+                        {
+                            "name": "privateIPv4Address",
+                            "value": "10.0.2.244"
+                        }
+                    ]
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "ecs.cpu-architecture",
+                    "value": "x86_64"
+                }
+            ],
+            "availabilityZone": "ap-southeast-1b",
+            "clusterArn": "arn:aws:ecs:ap-southeast-1:982068585847:cluster/ecs-mini-project-cluster",
+            "connectivity": "CONNECTED",
+            "connectivityAt": "2025-09-09T13:45:07.515000+08:00",
+            "containers": [
+                {
+                    "containerArn": "arn:aws:ecs:ap-southeast-1:982068585847:container/ecs-mini-project-cluster/70a8b581593f4e43a03877157b5502ce/432be194-81aa-4976-90de-0cdfe315c0bd",
+                    "taskArn": "arn:aws:ecs:ap-southeast-1:982068585847:task/ecs-mini-project-cluster/70a8b581593f4e43a03877157b5502ce",
+                    "name": "backend",
+                    "image": "982068585847.dkr.ecr.ap-southeast-1.amazonaws.com/backend-repo:latest",
+                    "imageDigest": "sha256:46a9fc22dff51d42268397e328e5fcb42220d78a0aff142f574100997f6b2d0e",
+                    "runtimeId": "70a8b581593f4e43a03877157b5502ce-2750272591",
+                    "lastStatus": "RUNNING",
+                    "networkBindings": [],
+                    "networkInterfaces": [
+                        {
+                            "attachmentId": "58b6f5e4-67d1-47fd-bda3-71d52e35d0f2",
+                            "privateIpv4Address": "10.0.2.244"
+                        }
+                    ],
+                    "healthStatus": "UNKNOWN",
+                    "cpu": "0"
+                }
+            ],
+            "cpu": "256",
+            "createdAt": "2025-09-09T13:45:03.573000+08:00",
+            "desiredStatus": "RUNNING",
+            "enableExecuteCommand": false,
+            "group": "service:backend-service",
+            "healthStatus": "UNKNOWN",
+            "lastStatus": "RUNNING",
+            "launchType": "FARGATE",
+            "memory": "512",
+            "overrides": {
+                "containerOverrides": [
+                    {
+                        "name": "backend"
+                    }
+                ],
+                "inferenceAcceleratorOverrides": []
+            },
+            "platformVersion": "1.4.0",
+            "platformFamily": "Linux",
+            "pullStartedAt": "2025-09-09T13:45:18.879000+08:00",
+            "pullStoppedAt": "2025-09-09T13:45:23.247000+08:00",
+            "startedAt": "2025-09-09T13:45:40.772000+08:00",
+            "startedBy": "ecs-svc/4794630501711930104",
+            "tags": [],
+            "taskArn": "arn:aws:ecs:ap-southeast-1:982068585847:task/ecs-mini-project-cluster/70a8b581593f4e43a03877157b5502ce",
+            "taskDefinitionArn": "arn:aws:ecs:ap-southeast-1:982068585847:task-definition/backend-task:3",
+            "version": 5,
+            "ephemeralStorage": {
+                "sizeInGiB": 20
+            },
+            "fargateEphemeralStorage": {
+                "sizeInGiB": 20
+            }
+        }
+    ],
+    "failures": []
+}
